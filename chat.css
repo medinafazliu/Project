@@ -1,0 +1,132 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F28C28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 20px;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.chat-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.chat-box {
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+    margin: 5px 0;
+}
+
+.bot-message {
+    text-align: left;
+    margin: 5px 0;
+}
+
+.history-box {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.history-box h3 {
+    margin: 0 0 10px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .chat-container {
+        padding: 15px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .chat-box {
+        height: 250px;
+    }
+
+    #user-input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #send-btn {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    #history-box {
+        margin-top: 20px;
+    }
+
+    #history-list {
+        max-height: 150px;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    #links a {
+        font-size: 14px;
+    }
+}
+

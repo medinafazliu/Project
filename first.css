@@ -1,0 +1,185 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #F28C28;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    border: 3px solid #703b05;
+}
+
+header img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 10px;
+}
+
+section {
+    background: white;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 3px solid #F28C28;
+    flex-basis: 30%;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 20px;
+}
+
+section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #F28C28;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.about-us {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #F28C28;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #F28C28;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+#logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+    
+    header {
+        padding: 0.5em;
+    }
+
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    
+    main {
+        flex-direction: column; 
+    }
+
+    section {
+        flex-basis: 100%; 
+        margin: 10px 0;
+    }
+
+    .about-us h2 {
+        font-size: 20px;
+    }
+
+    .about-us p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.3em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+
+    .about-us p {
+        font-size: 12px;
+    }
+
+    
+    section h2 {
+        font-size: 18px;
+    }
+}
+
+
